@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+:root{
+  --main-color : "#ff5252";
+  --gray-color:"#d1d1d8";
+}
+#home{
+  position:fixed;
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, .5);
+  display: none ;
+}
+.cozy{
+  font-weight: bold;
+  font-size: 25px;
+  color:rgb(1, 1, 90);
+}
+.header{
+  display: flex;
+  gap:200px;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #d1d1d8;
+  font-size: 16px;
+}
+.header .logo{
+  width:150px;
+}
+.header #cart{
+  width: 100px;
+  height: 30px;
+}
+.shop{
+  position:relative;
+  display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+}
+.shop p{
+position: absolute;
+right: 3px;
+bottom:25px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: red;
+  color: white;
+}
+#search {
+  border-radius: 5px;
+  border-color: #d1d1d8;
+  width: 150rem;
+}
+#search:hover{
+  border-color: #f78282;
+ 
+}
+#search input ::placeholder
+{  color: #d1d1d8;
+}
+
+.sportproducts{
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+ row-gap: 15px;
+}
+.product{
+  border:1px solid #d1d1d8;
+  width: 18vw;
+  height: 37vh;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+img{
+ 
+  width: 75%;
+  padding-left: 30px;
+}
+
+.flex2{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+}
+#title{
+  margin-left: 5px;
+}
+.product button{
+  background-color: rgb(1, 1, 90);
+  color: white;
+  border-radius: 3px;
+font-size: 15px;
+width:90%;
+margin-left: 12px;
+margin-bottom: 10px;
+padding: 2px 0;
+}
+.add:hover ,  .header #cart:hover{
+  cursor: pointer;
+}
+.price{
+  font-weight: 200;
+  font-size: 16px;
+}
+#popup{
+  position: fixed;
+  top:50%;
+  display: none;
+  left: 50%;
+  width: 60vw;
+  background-color: white;
+  padding: 10px;
+  transform: translate(-50%,-50%);
+}
+
+#mycart{
+display: flex;
+justify-content: space-between;
+padding: 5px 3px;
+background-color: rgb(1, 1, 90);
+border-radius: 5px;
+color: white;
+
+}
+#mycart span{
+  color: red;
+}
+#mycart p{
+  padding: 5px;
+  font-weight: bold;
+}
+#cartitem{
+  text-align: center;
+  padding: 5px;
+}
+.cart-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid ;
+  border-radius: 3px;
+  margin: 10px 10px;
+}
+.cart-item .row-img{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rowimg{
+  width: 100px;
+  height: 75px;
+}
+.fa-trash:hover{
+  cursor: pointer;
+  color:#333;
+}
+@media screen and (max-width: 992px) {
+  .sportproducts{
+    
+      grid-template-columns: repeat(2,2fr);
+  }}
